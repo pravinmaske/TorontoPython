@@ -1,3 +1,16 @@
+def get_answer(prompt):
+        """
+	(str)-> str
+	use prompt to ask the user 'yes' or 'no' answer and 
+	continue asking until the user gives a valid response.
+	Return the answer
+	"""
+
+        answer =input(prompt)
+        while not (answer =='yes' or answer =='no'):
+                answer=input(prompt)
+        return answer
+        
 def up_to_vowel(s):
 	'''
 	(str) -> str
